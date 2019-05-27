@@ -16,6 +16,10 @@
 		90CB6B33229C26B9006B4602 /* RedditPicsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B32229C26B9006B4602 /* RedditPicsContracts.swift */; };
 		90CB6B35229C26EE006B4602 /* RedditPicsViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B34229C26EE006B4602 /* RedditPicsViewModels.swift */; };
 		90CB6B37229C2705006B4602 /* RedditPicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B36229C2705006B4602 /* RedditPicsView.swift */; };
+		90CB6B3A229C2DDD006B4602 /* NetworkingWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B39229C2DDD006B4602 /* NetworkingWebService.swift */; };
+		90CB6B3E229C3260006B4602 /* RedditConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B3D229C3260006B4602 /* RedditConstants.swift */; };
+		90CB6B40229C334B006B4602 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B3F229C334B006B4602 /* EndPoint.swift */; };
+		90CB6B45229C33FB006B4602 /* NetworkingContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B44229C33FB006B4602 /* NetworkingContracts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		90CB6B32229C26B9006B4602 /* RedditPicsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPicsContracts.swift; sourceTree = "<group>"; };
 		90CB6B34229C26EE006B4602 /* RedditPicsViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPicsViewModels.swift; sourceTree = "<group>"; };
 		90CB6B36229C2705006B4602 /* RedditPicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPicsView.swift; sourceTree = "<group>"; };
+		90CB6B39229C2DDD006B4602 /* NetworkingWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingWebService.swift; sourceTree = "<group>"; };
+		90CB6B3D229C3260006B4602 /* RedditConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditConstants.swift; sourceTree = "<group>"; };
+		90CB6B3F229C334B006B4602 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		90CB6B44229C33FB006B4602 /* NetworkingContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingContracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +81,9 @@
 		90CB6B20229C2374006B4602 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				90CB6B3B229C3218006B4602 /* Common */,
 				90CB6B21229C2384006B4602 /* Application */,
 				90CB6B28229C2564006B4602 /* Module */,
-				90CB6B25229C2434006B4602 /* Models */,
-				90CB6B2B229C2630006B4602 /* Utility */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -172,6 +179,59 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		90CB6B38229C2DBE006B4602 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				90CB6B43229C33E2006B4602 /* Contracts */,
+				90CB6B42229C33C8006B4602 /* EndPoint */,
+				90CB6B41229C33BC006B4602 /* WebServiceManager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		90CB6B3B229C3218006B4602 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				90CB6B38229C2DBE006B4602 /* Networking */,
+				90CB6B3C229C322E006B4602 /* Constants */,
+				90CB6B2B229C2630006B4602 /* Utility */,
+				90CB6B25229C2434006B4602 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		90CB6B3C229C322E006B4602 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				90CB6B3D229C3260006B4602 /* RedditConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		90CB6B41229C33BC006B4602 /* WebServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				90CB6B39229C2DDD006B4602 /* NetworkingWebService.swift */,
+			);
+			path = WebServiceManager;
+			sourceTree = "<group>";
+		};
+		90CB6B42229C33C8006B4602 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				90CB6B3F229C334B006B4602 /* EndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		90CB6B43229C33E2006B4602 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				90CB6B44229C33FB006B4602 /* NetworkingContracts.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,11 +304,15 @@
 			files = (
 				90CB6B2D229C264E006B4602 /* RedditPicsModel.swift in Sources */,
 				90CB6B35229C26EE006B4602 /* RedditPicsViewModels.swift in Sources */,
+				90CB6B40229C334B006B4602 /* EndPoint.swift in Sources */,
 				90CB6B33229C26B9006B4602 /* RedditPicsContracts.swift in Sources */,
 				90CB6B2F229C267E006B4602 /* RedditPicsUtility.swift in Sources */,
+				90CB6B3A229C2DDD006B4602 /* NetworkingWebService.swift in Sources */,
 				90CB6AE2229C1A76006B4602 /* AppDelegate.swift in Sources */,
 				90CB6B37229C2705006B4602 /* RedditPicsView.swift in Sources */,
 				90CB6B31229C26A9006B4602 /* RedditPicsViewController.swift in Sources */,
+				90CB6B45229C33FB006B4602 /* NetworkingContracts.swift in Sources */,
+				90CB6B3E229C3260006B4602 /* RedditConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

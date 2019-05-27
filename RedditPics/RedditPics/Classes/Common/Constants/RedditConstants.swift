@@ -13,3 +13,7 @@ struct API {
     static let getPicsURL = "/r/pics/hot.json"
     static let getNextPicsURL = "?after="
 }
+
+struct CellIdentifier {
+    static let collectionViewCell = "collectionViewCell"
+}

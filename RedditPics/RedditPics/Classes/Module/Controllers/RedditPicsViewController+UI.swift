@@ -26,6 +26,10 @@ extension RedditPicsViewController{
     }
     
     func makeAPICall(){
+        guard checkInternetConnectivity() else {
+            print("No Internet Connectivity")
+            return
+        }
         guard let output = controllerOutput else { return }
         output.loadNewPage(true)
     }

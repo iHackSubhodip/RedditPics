@@ -27,6 +27,7 @@
 		90CB6B52229C4D50006B4602 /* RedditPicsViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B51229C4D50006B4602 /* RedditPicsViewController+UI.swift */; };
 		90CB6B54229C4DF0006B4602 /* RedditPicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B53229C4DF0006B4602 /* RedditPicsCollectionViewCell.swift */; };
 		90CB6B56229C4E4F006B4602 /* RedditPicsViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B55229C4E4F006B4602 /* RedditPicsViewController+CollectionView.swift */; };
+		90CB6B59229C5391006B4602 /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB6B58229C5391006B4602 /* ImageCaching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		90CB6B51229C4D50006B4602 /* RedditPicsViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedditPicsViewController+UI.swift"; sourceTree = "<group>"; };
 		90CB6B53229C4DF0006B4602 /* RedditPicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPicsCollectionViewCell.swift; sourceTree = "<group>"; };
 		90CB6B55229C4E4F006B4602 /* RedditPicsViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedditPicsViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		90CB6B58229C5391006B4602 /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		90CB6B3B229C3218006B4602 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				90CB6B57229C5380006B4602 /* ImageCaching */,
 				90CB6B46229C3C39006B4602 /* Interactor */,
 				90CB6B38229C2DBE006B4602 /* Networking */,
 				90CB6B3C229C322E006B4602 /* Constants */,
@@ -275,6 +278,14 @@
 				90CB6B4D229C3F2C006B4602 /* RedditPicsEntity.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		90CB6B57229C5380006B4602 /* ImageCaching */ = {
+			isa = PBXGroup;
+			children = (
+				90CB6B58229C5391006B4602 /* ImageCaching.swift */,
+			);
+			path = ImageCaching;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +370,7 @@
 				90CB6AE2229C1A76006B4602 /* AppDelegate.swift in Sources */,
 				90CB6B37229C2705006B4602 /* RedditPicsView.swift in Sources */,
 				90CB6B31229C26A9006B4602 /* RedditPicsViewController.swift in Sources */,
+				90CB6B59229C5391006B4602 /* ImageCaching.swift in Sources */,
 				90CB6B4E229C3F2C006B4602 /* RedditPicsEntity.swift in Sources */,
 				90CB6B45229C33FB006B4602 /* NetworkingContracts.swift in Sources */,
 				90CB6B3E229C3260006B4602 /* RedditConstants.swift in Sources */,

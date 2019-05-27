@@ -20,4 +20,15 @@ enum EndPoints{
             }
         }
     }
+    
+    enum RedditPicsNextPagePoint: EndPoint{
+        case fetch
+        
+        var path: String{
+            switch self{
+            case .fetch:
+                return API.getNextPicsURL
+            }
+        }
+    }
 }

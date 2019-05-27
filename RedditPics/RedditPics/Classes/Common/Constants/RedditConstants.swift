@@ -11,4 +11,5 @@ import Foundation
 struct API {
     static let baseUrl = "http://www.reddit.com"
     static let getPicsURL = "/r/pics/hot.json"
+    static let getNextPicsURL = "?after="
 }

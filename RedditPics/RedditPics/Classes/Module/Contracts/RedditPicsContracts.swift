@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol RedditPicsVCInput: class{
+    var redditViewModel: RedditPicsViewModel { get set }
+}
+
+protocol RedditPicsVCOutput: class{
+    func loadNewPage(_ firstTimeLoading: Bool)
+}

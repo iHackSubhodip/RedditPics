@@ -1,5 +1,5 @@
 //
-//  RedditPicsViewModels.swift
+//  RedditPicsViewModel.swift
 //  RedditPics
 //
 //  Created by Banerjee,Subhodip on 27/05/19.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct RedditPicsViewModel{
+    var data: [ChildrenData]
+}

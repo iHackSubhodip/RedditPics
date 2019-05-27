@@ -12,7 +12,7 @@ typealias JSONCompletionHandler = (Decodable?) -> ()
 
 final class NetworkingWebService{
     
-    func makeRequest<T: Decodable>(with urlString: String, convertInto model: T.Type, completion: @escaping JSONCompletionHandler){
+    func makeNetworkCall<T: Decodable>(with urlString: String, convertInto model: T.Type, completion: @escaping JSONCompletionHandler){
         guard let url = URL(string: urlString) else { return }
         let request = URLRequest(url: url)
         let session = URLSession(configuration: .default)

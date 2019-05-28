@@ -41,7 +41,13 @@ extension RedditPicsViewController: UICollectionViewDelegate {
 
 extension RedditPicsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width - 20,
-                      height: UIScreen.main.bounds.width * 150 / 400)
+        if UIDevice.current.orientation.isLandscape{
+            return CGSize(width: view.frame.width - 20,
+                          height: view.frame.width * 150 / 1000)
+        }else{
+            return CGSize(width: view.frame.width - 20,
+                          height: view.frame.width * 150 / 400)
+        }
+        
     }
 }

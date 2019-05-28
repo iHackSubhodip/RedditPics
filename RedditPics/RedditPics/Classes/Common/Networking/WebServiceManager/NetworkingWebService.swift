@@ -18,8 +18,14 @@ final class NetworkingWebService{
         let session = URLSession(configuration: .default)
         let dataTask = session.dataTask(with: request) { [weak self] (data, response, error) in
             guard let selfObject = self else { return }
-            guard error == nil else { return }
-            guard let responseData = data else { return }
+            guard error == nil else {
+                print("error in Network call")
+                return
+            }
+            guard let responseData = data else {
+                print("error in Data parsing")
+                return
+            }
             completion(selfObject.injectIntoModel(responseData, model))
         }
         dataTask.resume()

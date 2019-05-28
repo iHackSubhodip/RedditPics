@@ -12,10 +12,10 @@ extension RedditPicsViewController{
     
     func configureCollectionView() {
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         registerCollectionViewCells()
         collectionView.backgroundColor = .white
         view.addSubview(collectionView)

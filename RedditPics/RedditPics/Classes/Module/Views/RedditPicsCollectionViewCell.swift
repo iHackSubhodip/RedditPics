@@ -30,11 +30,13 @@ class RedditPicsCollectionViewCell: UICollectionViewCell {
     private func redditCellSetup(){
         addSubview(redditLabel)
         addSubview(redditImageView)
+        layer.cornerRadius = 10.0
+        backgroundColor = .white
     }
     
     private func redditCellLayoutCetup(){
-        redditImageView.anchors(top: safeAreaLayoutGuide.topAnchor, topConstants: 10, leading: safeAreaLayoutGuide.leadingAnchor, leadingConstants: 10, bottom: safeAreaLayoutGuide.bottomAnchor, bottomConstants: 10, widthConstants: 130)
-        redditLabel.anchors(top: safeAreaLayoutGuide.topAnchor, topConstants: 10, leading: redditImageView.trailingAnchor, leadingConstants: 10, bottom: safeAreaLayoutGuide.bottomAnchor, bottomConstants: 10, trailing: safeAreaLayoutGuide.trailingAnchor, trailingConstants: -10)
+        redditImageView.anchors(top: safeAreaLayoutGuide.topAnchor, topConstants: 10, leading: safeAreaLayoutGuide.leadingAnchor, leadingConstants: 10, bottom: safeAreaLayoutGuide.bottomAnchor, bottomConstants: -10, widthConstants: 130)
+        redditLabel.anchors(top: safeAreaLayoutGuide.topAnchor, topConstants: 10, leading: redditImageView.trailingAnchor, leadingConstants: 10, bottom: safeAreaLayoutGuide.bottomAnchor, bottomConstants: -10, trailing: safeAreaLayoutGuide.trailingAnchor, trailingConstants: -10)
     }
     
     override init(frame: CGRect) {

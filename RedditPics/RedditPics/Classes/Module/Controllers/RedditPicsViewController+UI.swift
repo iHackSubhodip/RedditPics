@@ -17,7 +17,7 @@ extension RedditPicsViewController{
         collectionView.dataSource = self
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         registerCollectionViewCells()
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = UIColor.rgb(red: 233, green: 233, blue: 233, alpha: 1.0)
         view.addSubview(collectionView)
     }
     

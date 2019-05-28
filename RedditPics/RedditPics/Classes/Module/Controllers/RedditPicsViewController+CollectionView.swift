@@ -13,6 +13,7 @@ extension RedditPicsViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.collectionViewCell, for: indexPath) as? RedditPicsCollectionViewCell else {
             return UICollectionViewCell()
         }
+        cell.applyToCell(withModel: redditViewModel.data[indexPath.row])
         return cell
     }
     

@@ -12,6 +12,7 @@ class RedditPicsViewController: UIViewController, RedditPicsVCInput{
 
     var collectionView: UICollectionView!
     var controllerOutput: RedditPicsVCOutput?
+    
     var redditViewModel: RedditPicsViewModel = RedditPicsViewModel(data: []) {
         didSet {
             reloadCollectionViewData()

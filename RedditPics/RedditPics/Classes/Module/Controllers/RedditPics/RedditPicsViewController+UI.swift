@@ -12,6 +12,7 @@ extension RedditPicsViewController{
     
     func configureCollectionView() {
         let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -19,6 +20,7 @@ extension RedditPicsViewController{
         registerCollectionViewCells()
         collectionView.backgroundColor = UIColor.rgb(red: 233, green: 233, blue: 233, alpha: 1.0)
         view.addSubview(collectionView)
+        registerForPreviewing(with: self, sourceView: collectionView)
     }
     
     private func registerCollectionViewCells(){
